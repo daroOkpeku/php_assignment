@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="w-full">
+        <span class="w-1/3 flex items-center justify-center float-right">
+          <a ><button class="bg-blue-400 text-white rounded-md px-2 py-2 add">Add User</button></a>  
+        </span>
+    </div>
+    <article class="w-full overflow-x-auto  flex flex-col items-center">
+
+        <section class="w-[90%] sm:w-[90%] md:w-[60%] lg:w-[60%] border m-auto mt-10">
+            <table class="w-full border py-2">
+              <thead>
+                <tr>
+                  <th
+                    class="font-bold capitalize bg-gray-500 text-white text-center"
+                  >
+                    firstname
+                  </th>
+                  <th
+                  class="font-bold capitalize bg-gray-500 text-white text-center"
+                >
+                  lastname
+                </th>
+                  <th
+                    class="font-bold capitalize bg-gray-500 text-white text-center"
+                  >
+                    age
+                  </th>
+                  <th
+                    class="font-bold capitalize bg-gray-500 text-white text-center"
+                  >
+                    email
+                  </th>
+                  <th
+                  class="font-bold capitalize bg-gray-500 text-white text-center"
+                >
+                  gender
+                </th>
+                  <th
+                    class="font-bold capitalize bg-gray-500 text-white text-center"
+                  >
+                    action
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="covertable">
+              
+                <!-- <tr>
+                  <td class="text-sm font-medium capitelize text-center">
+               
+                  </td>
+                  <td class="text-sm font-medium capitelize text-center">
+                
+                  </td>
+                  <td class="text-sm font-medium capitelize text-center">
+                  
+                  </td>
+                  <td class="text-sm font-medium capitelize text-center">
+                  
+                  </td>
+                  <td class="text-sm font-medium capitelize text-center">
+                  
+                  </td>
+                  <td class="text-sm font-medium capitelize text-center">
+                    <div class="w-1/3 m-auto flex flex-col gap-2 sm:flex sm:flex-col gap-2  md:flex md:flex-row md:space-x-2 lg:flex lg:flex-row lg:space-x-2 items-center ">
+                      <a
+                     
+                        class="py-2 px-2 rounded-md bg-green-400 text-white text-center"
+                      >
+                        edit
+                    </a>
+                      <a
+                      
+                        class="py-2 px-2 rounded-md bg-red-400 text-white text-center"
+                      >
+                        delete
+                </a>
+                    </div>
+                  </td>
+                </tr> -->
+              
+              </tbody>
+            </table>
+          </section>
+
+
+          <section class="w-full flex flex-row items-center justify-center">
+            <div class="w-1/12 m-auto flex flex-row items-center justify-between">
+              <span class="w-1/5 prev">
+                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </span>
+              <span class="w-1/5 numinside">1</span>
+              <span class="w-1/5 next">
+                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </span>
+            </div>
+         </section>
+    </article>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/home.js"></script>
+</html>

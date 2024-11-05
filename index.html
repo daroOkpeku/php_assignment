@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+
+    <div class="w-full flex flex-col items-center space-x-4 py-2">
+     
+      <div>
+        <!-- this how you display the validtion in the frontend -->
+     
+            <div class="text-center capitalize hidden message">some went wrong</div>
+
+      </div>
+
+        <form action="/edit" method="POST"  class="w-3/4  sm:w-3/4  md:w-2/5 lg:w-2/5 flex flex-col items-center gap-4">
+          
+
+            <div class="w-full flex flex-col items-center ">
+              <span class="w-full capitalize text-left">First Name</span>
+              <div class="w-full">
+                <input
+                  type="text"
+                  class="w-full name border rounded-md py-2 p-2 firstname"
+                  name="name"
+                  id="name"
+                  value=""
+                />
+              </div>
+            </div>
+
+            <div class="w-full flex flex-col items-center ">
+                <span class="w-full capitalize text-left">Last Name</span>
+                <div class="w-full">
+                  <input
+                    type="text"
+                    class="w-full name border rounded-md py-2 p-2 lasname"
+                    name="name"
+                    id="name"
+                    value=""
+                  />
+                </div>
+              </div>
+  
+            <div class="w-full flex flex-col items-center">
+              <span class="w-full capitalize text-left">Age</span>
+              <div class="w-full">
+                <input
+                  type="number"
+                  class="w-full name border rounded-md py-2 p-2 age"
+                  name="age"
+                  id="age"
+                  value=""
+                />
+              </div>
+            </div>
+  
+            <div class="w-full flex flex-col items-center">
+              <span class="w-full capitalize text-left">email</span>
+              <div class="w-full">
+                <input
+                  type="text"
+                  class="w-full class border rounded-md py-2 p-2 email"
+                  name="email"
+                  id="class"
+                  value=""
+                />
+              </div>
+            </div>
+
+            <div class="w-full flex flex-col items-center">
+              <span class="w-full capitalize text-left">Gender</span>
+              <div class="w-full">
+                <select    class="w-full class border rounded-md py-2 p-2 gender" aria-selected="true" name="gender">
+                 
+                  <option value="">Select</option>
+                  <option value="Male">Male</option>
+                  <option value="FeMale">Female</option>
+                </select>
+              </div>
+            </div>
+  
+            <div class="w-full flex flex-col items-center mt-4">
+              <button
+                type="submit"
+                class="w-full m-auto bg-blue-400 text-white text-base text-center border py-2 rounded-md btn"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/app.js"></script>
+</html>
